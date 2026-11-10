@@ -1,0 +1,276 @@
+/* ==========================================================
+「臺中驛鐵道文化園區」專題外部 CSS 樣式表 (HW07)
+========================================================== */
+
+{
+box-sizing: border-box;
+}
+
+body {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+font-size: 17px;
+line-height: 1.85;
+color: #4a3b32;
+background-color: #fcfbfa;
+}
+
+/* 1. 頂部導覽列 (Top Navigation) */
+header.top-nav {
+background-color: #5c4033;
+color: #fffdf5;
+padding: 20px 30px;
+border-top: 6px solid #d97736;
+border-radius: 8px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 25px;
+box-shadow: 0 2px 4px rgba(74, 59, 50, 0.05);
+}
+
+header.top-nav h1 {
+margin: 0;
+font-size: 1.8rem;
+letter-spacing: 0.04em;
+}
+
+header.top-nav nav a {
+color: #fffdf5;
+text-decoration: none;
+margin-left: 15px;
+padding: 6px 12px;
+border-radius: 4px;
+background-color: rgba(255, 255, 255, 0.1);
+transition: background 0.3s;
+}
+
+header.top-nav nav a:hover,
+header.top-nav nav a:focus-visible {
+background-color: #d97736;
+text-decoration: underline;
+}
+
+/* 2. CSS Grid System 網格排版 (左側固定側邊欄 280px + 右側主內容) */
+.page-layout {
+display: grid;
+grid-template-columns: 280px 1fr;
+gap: 25px;
+align-items: start;
+}
+
+/* 3. 固定側邊欄 (Aside) */
+aside.left-sidebar {
+background-color: #ffffff;
+padding: 25px;
+border-radius: 8px;
+border: 1px solid #e6ded5;
+box-shadow: 0 2px 4px rgba(74, 59, 50, 0.05);
+position: sticky;
+top: 20px;
+}
+
+aside.left-sidebar h2 {
+font-size: 1.2rem;
+color: #5c4033;
+margin-top: 0;
+border-left: 4px solid #d97736;
+padding-left: 10px;
+}
+
+aside.left-sidebar ul {
+padding-left: 20px;
+margin: 10px 0;
+}
+
+aside.left-sidebar li {
+margin-bottom: 8px;
+}
+
+aside.left-sidebar a {
+color: #d97736;
+text-decoration: none;
+}
+
+aside.left-sidebar a:hover {
+text-decoration: underline;
+color: #b85e22;
+}
+
+/* 4. 主內容區卡片排版 (Main & Section) */
+main.main-content article section,
+main.main-content article aside {
+margin: 0 0 25px 0;
+padding: 24px 28px;
+background-color: #ffffff;
+border: 1px solid #e6ded5;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(74, 59, 50, 0.05);
+}
+
+h2 {
+margin: 0 0 18px;
+padding-left: 12px;
+border-left: 4px solid #d97736;
+font-size: 1.4rem;
+line-height: 1.5;
+color: #5c4033;
+}
+
+h3 {
+margin: 22px 0 10px;
+font-size: 1.1rem;
+color: #6b4f43;
+}
+
+p {
+margin: 12px 0;
+}
+
+ul, ol {
+padding-left: 1.6em;
+}
+
+li {
+margin: 8px 0;
+}
+
+hr {
+margin: 26px 0;
+border: 0;
+border-top: 1px solid #e6ded5;
+}
+
+/* 5. 特殊文字樣式 */
+.reading-focus {
+background-color: #fae1cd;
+color: #5c4033;
+padding: 2px 6px;
+}
+
+.report-disclaimer {
+font-style: italic;
+color: #777;
+}
+
+.route-note {
+border-left: 4px solid #d97736;
+padding-left: 14px;
+background-color: #fcf6f0;
+padding-top: 6px;
+padding-bottom: 6px;
+}
+
+/* 6. 特色對照表格 */
+table {
+width: 100%;
+border-collapse: collapse;
+font-size: 0.95em;
+overflow-wrap: anywhere;
+margin: 15px 0;
+}
+
+caption {
+margin-bottom: 12px;
+text-align: left;
+font-weight: bold;
+color: #5c4033;
+}
+
+th, td {
+padding: 12px;
+border: 1px solid #e6ded5;
+text-align: left;
+vertical-align: top;
+}
+
+thead {
+background-color: #f5efe6;
+color: #5c4033;
+}
+
+tbody th {
+background-color: #fcf6f0;
+}
+
+/* 7. 圖片、影片與地圖媒體自適應 (RWD) */
+figure {
+margin: 18px 0;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+border-radius: 4px;
+}
+
+figcaption {
+margin-top: 10px;
+color: #8c7865;
+font-size: 0.85em;
+}
+
+iframe {
+display: block;
+max-width: 100%;
+border: 0;
+border-radius: 4px;
+}
+
+.video-frame {
+width: 100%;
+height: auto;
+aspect-ratio: 16 / 9;
+}
+
+.map-frame {
+width: 100%;
+height: 340px;
+}
+
+/* 8. 走讀小提醒區塊 */
+#tips {
+background-color: #fcf6f0;
+border-left: 5px solid #d97736;
+}
+
+summary {
+cursor: pointer;
+font-weight: bold;
+color: #5c4033;
+}
+
+/* 9. 頁尾 */
+footer {
+background-color: #5c4033;
+color: #fffdf5;
+text-align: center;
+padding: 25px;
+border-radius: 8px;
+margin-top: 30px;
+}
+
+footer a {
+color: #fae1cd;
+}
+
+/* 10. RWD 響應式功能：當螢幕寬度小於 850px 時轉為單欄 */
+@media (max-width: 850px) {
+.page-layout {
+grid-template-columns: 1fr;
+}
+aside.left-sidebar {
+position: static;
+}
+header.top-nav {
+flex-direction: column;
+gap: 15px;
+text-align: center;
+}
+header.top-nav nav a {
+margin: 0 4px;
+}
+}
