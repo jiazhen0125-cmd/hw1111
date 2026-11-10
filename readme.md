@@ -48,8 +48,8 @@
 ## 專案部署連結
 
 1. **Prompt 說明檔 (GitHub)**：  
-   `https://github.com/你的GitHub帳號/你的專案名稱/blob/main/README.md`
+   `https://github.com/jiazhen0125-cmd/hw1111/blob/main/README.md`
 2. **InfinityFree 部署網址**：  
-   `https://jiaci.freehosting.dev/hw1111__D1446375.html`
+   `https://ftry.great-site.net/index.html`
 3. **Vercel 部署網址**：  
-   `https://你的專案名稱.vercel.app`
+   `https://hw1111-chi.vercel.app/`
